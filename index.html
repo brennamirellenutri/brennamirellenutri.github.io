@@ -22,7 +22,7 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
         .photo-placeholder {
-            background-color: rgba(255, 255, 255, 0.884);
+            background-color: rgba(255, 255, 255, 0.884); 
         }
         .btn-whatsapp {
             background-color: #25D366;
@@ -119,6 +119,9 @@
             .mobile-menu-btn {
                 display: block;
             }
+            .md\:w-2\/5 {
+                margin-bottom: 10px;
+            }
         }
         .check-icon {
             width: 20px;
@@ -199,8 +202,8 @@
 
         <!-- Hero Section with Photo -->
         <section class="hero-section flex-grow py-16 px-6">
-            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 mb-10 md:mb-0">
+            <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:text-left">
                     <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Reeducação alimentar de forma simples e saudável</h1>
                     <p class="text-white text-base md:text-lg mb-8">Transforme sua saúde com uma nutrição simples, eficiente e baseada em ciência. Vou te mostrar que é possível alcançar resultados reais e duradouros com orientação personalizada e uma dieta sem restrições.</p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -215,13 +218,13 @@
                         </a>
                     </div>
                 </div>
-                <div class="md:w-2/5">
+                <div class="md:w-2/5 w-full flex justify-center md:justify-end">
                     <div class="relative w-full aspect-square max-w-md mx-auto">
-                        <div class="photo-placeholder absolute inset-0 rounded-full bg-white/20 z-10"></div>
+                        <div class="photo-placeholder w-full w-full aspect-square rounded-full max-w-sm mx-auto"></div>
                         <!-- Foto principal placeholder -->
-                        <div class="absolute inset-0 flex items-center justify-center z-10 transition-transform duration-300 hover:scale-105 hover:shadow-3x1">
+                        <div class="absolute inset-0 flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:shadow-3x1">
                             <div class="w-full h-full bg-white rounded-full">
-                                <img src="assets/logos/Logo 1 Cor 1 Shine CRN.png" alt="Logo 2" class="w-full h-full object-contain rounded-full border-white shadow-[0_0_40px_rgba(255,255,255,0.6)]"/>
+                                <img src="assets/logos/Logo 1 Cor 1 Shine CRN.png" alt="Logo 2" class="w-full h-full object-contain rounded-full border-white shadow-[0_0_40px_rgba(255,255,255,0.5)]"/>
                             </div>
                         </div>
                     </div>
@@ -235,9 +238,9 @@
                 <h2 class="text-3xl font-bold accent-color mb-8 text-center">Sobre Mim</h2>
                 <div class="flex flex-col md:flex-row items-center gap-10">
                     <div class="md:w-1/3">
-                        <div class="photo-placeholder w-full aspect-square rounded-lg max-w-sm mx-auto bg-gray-100 flex items-center justify-center">
+                        <div class="photo-placeholder w-full w-full aspect-square rounded-full max-w-sm mx-auto bg-gradient-to-r from-[#aa6e69] to-[#8e5b57] flex items-center justify-center shadow-lg overflow-hidden border-4 border-white">
                             <!-- Foto sobre mim placeholder -->
-                            <span class="text-gray-500 text-lg">foto aqui</span>
+                            <img src="assets\images\ARA_4827.png" alt="Imagem 1" class="w-full h-full object-contain"/>
                         </div>
                     </div>
                     <div class="md:w-2/3">
