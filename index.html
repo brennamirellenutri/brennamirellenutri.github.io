@@ -21,6 +21,22 @@
             padding: 8px 16px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
+        @media (max-width: 768px) {
+            .logo-container {
+                width: 300px; /* Ajuste o tamanho desejado */
+                height: auto; /* Mantém a proporção */
+                padding: 4px 8px; /* Reduz o padding */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .logo-container img {
+                width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+                height: auto; /* Mantém a proporção da imagem */
+                object-fit: contain; /* Garante que a imagem não seja cortada */
+            }
+        }
         .photo-placeholder {
             background-color: rgba(255, 255, 255, 0.884); 
         }
@@ -91,6 +107,10 @@
             border-radius: 8px;
             padding: 6px 12px;
         }
+        .menu-link.active {
+            color: #aa6e69; /* Accent color */
+            font-weight: bold; /* Opcional: destaque adicional */
+        }
         /* Mobile menu styles */
         .mobile-menu {
             display: none;
@@ -111,6 +131,10 @@
         }
         .mobile-menu-btn {
             display: none;
+        }
+        .menu-link-mobile.active {
+            color: #aa6e69; /* Accent color */
+            font-weight: bold; /* Opcional: destaque adicional */
         }
         @media (max-width: 768px) {
             .desktop-menu {
@@ -165,12 +189,12 @@
                 <!-- Desktop Menu -->
                 <nav class="desktop-menu">
                     <ul class="flex space-x-6">
-                        <li><a href="#" class="accent-color font-medium hover:text-opacity-80">Início</a></li>
-                        <li><a href="#sobre" class="text-gray-600 font-medium hover:accent-color">Sobre Mim</a></li>
-                        <li><a href="#consultas" class="text-gray-600 font-medium hover:accent-color">Consultas</a></li>
-                        <li><a href="#convenios" class="text-gray-600 font-medium hover:accent-color">Convênios</a></li>
-                        <li><a href="#locais" class="text-gray-600 font-medium hover:accent-color">Locais</a></li>
-                        <li><a href="#contato" class="text-gray-600 font-medium hover:accent-color">Contato</a></li>
+                        <li><a href="#inicio" class="menu-link">Início</a></li>
+                        <li><a href="#sobre" class="menu-link">Sobre Mim</a></li>
+                        <li><a href="#consultas" class="menu-link">Consultas</a></li>
+                        <li><a href="#convenios" class="menu-link">Convênios</a></li>
+                        <li><a href="#locais" class="menu-link">Locais</a></li>
+                        <li><a href="#contato" class="menu-link">Contato</a></li>
                     </ul>
                 </nav>
                 
@@ -191,17 +215,17 @@
                 </svg>
             </button>
             <ul class="flex flex-col space-y-6 text-center">
-                <li><a href="#" class="accent-color font-medium text-xl hover:text-opacity-80" onclick="closeMenu()">Início</a></li>
-                <li><a href="#sobre" class="text-gray-600 font-medium text-xl hover:accent-color" onclick="closeMenu()">Sobre Mim</a></li>
-                <li><a href="#consultas" class="text-gray-600 font-medium text-xl hover:accent-color" onclick="closeMenu()">Consultas</a></li>
-                <li><a href="#convenios" class="text-gray-600 font-medium text-xl hover:accent-color" onclick="closeMenu()">Convênios</a></li>
-                <li><a href="#locais" class="text-gray-600 font-medium text-xl hover:accent-color" onclick="closeMenu()">Locais</a></li>
-                <li><a href="#contato" class="text-gray-600 font-medium text-xl hover:accent-color" onclick="closeMenu()">Contato</a></li>
+                <li><a href="#inicio" class="menu-link-mobile">Início</a></li>
+                <li><a href="#sobre" class="menu-link-mobile">Sobre Mim</a></li>
+                <li><a href="#consultas" class="menu-link-mobile">Consultas</a></li>
+                <li><a href="#convenios" class="menu-link-mobile">Convênios</a></li>
+                <li><a href="#locais" class="menu-link-mobile">Locais</a></li>
+                <li><a href="#contato" class="menu-link-mobile">Contato</a></li>
             </ul>
         </div>
 
         <!-- Hero Section with Photo -->
-        <section class="hero-section flex-grow py-16 px-6">
+        <section id="inicio" class="hero-section flex-grow py-16 px-6">
             <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
                 <div class="md:w-1/2 mb-10 md:mb-0 md:text-left">
                     <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Reeducação alimentar de forma simples e saudável</h1>
@@ -713,7 +737,7 @@
                     <div class="flex-1 text-center md:text-left">
                         <h3 class="text-lg font-semibold mb-4">Links Rápidos</h3>
                         <ul class="space-y-2 text-sm">
-                            <li><a href="#" class="hover:underline">Início</a></li>
+                            <li><a href="#inicio" class="hover:underline">Início</a></li>
                             <li><a href="#sobre" class="hover:underline">Sobre Mim</a></li>
                             <li><a href="#consultas" class="hover:underline">Consultas</a></li>
                             <li><a href="#convenios" class="hover:underline">Convênios</a></li>
@@ -804,6 +828,96 @@
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
+            });
+        });
+        // Desktop menu active
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const menuLinks = document.querySelectorAll('.desktop-menu a');
+
+            function setActiveLink() {
+                let currentSection = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100; // Ajuste para considerar o topo do header
+                    const sectionHeight = section.offsetHeight;
+
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                menuLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(currentSection)) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', setActiveLink);
+        });
+        // Mobile menu active
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const desktopMenuLinks = document.querySelectorAll('.desktop-menu a');
+            const mobileMenuLinks = document.querySelectorAll('.menu-link-mobile');
+
+            function setActiveLink() {
+                let currentSection = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100; // Ajuste para considerar o topo do header
+                    const sectionHeight = section.offsetHeight;
+
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                // Atualizar links do Desktop Menu
+                desktopMenuLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(currentSection)) {
+                        link.classList.add('active');
+                    }
+                });
+
+                // Atualizar links do Mobile Menu
+                mobileMenuLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(currentSection)) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', setActiveLink);
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('menuBtn');
+            const closeMenuBtn = document.getElementById('closeMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileMenuLinks = document.querySelectorAll('.menu-link-mobile');
+
+            // Abrir o menu
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Impede o scroll
+            });
+
+            // Fechar o menu
+            closeMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = ''; // Reativa o scroll
+            });
+
+            // Fechar o menu ao clicar em um link
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = ''; // Reativa o scroll
+                });
             });
         });
     </script>
