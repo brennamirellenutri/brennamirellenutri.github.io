@@ -1,0 +1,180 @@
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f5f2;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #aa6e69 0%, #8e5b57 100%);
+        }
+        .logo-container {
+            background-color: white;
+            border-radius: 12px;
+            padding: 8px 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        @media (max-width: 768px) {
+            .logo-container {
+                width: 300px; /* Ajuste o tamanho desejado */
+                height: auto; /* Mantém a proporção */
+                padding: 4px 8px; /* Reduz o padding */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .logo-container img {
+                width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+                height: auto; /* Mantém a proporção da imagem */
+                object-fit: contain; /* Garante que a imagem não seja cortada */
+            }
+        }
+        .photo-placeholder {
+            background-color: rgba(255, 255, 255, 0.884); 
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            transition: all 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1fba58;
+            transform: translateY(-2px);
+        }
+        .btn-about {
+            background-color: #f8f5f2;
+            color: #aa6e69;
+            border: 2px solid #aa6e69;
+            transition: all 0.3s ease;
+        }
+        .btn-about:hover {
+            background-color: #aa6e69;
+            color: #f8f5f2;
+            transform: translateY(-2px);
+        }
+        .accent-color {
+            color: #aa6e69;
+        }
+        .accent-bg {
+            background-color: #aa6e69;
+        }
+        .accent-border {
+            border-color: #aa6e69;
+        }
+        .accent-light-bg {
+            background-color: #f5e8e7;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .location-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid #aa6e69;
+        }
+        .location-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .insurance-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .insurance-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        .insurance-card {
+            transition: all 0.3s ease;
+        }
+        .insurance-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .footer-logo {
+            background-color: white;
+            border-radius: 8px;
+            padding: 6px 12px;
+        }
+        .menu-link.active {
+            color: #aa6e69; /* Accent color */
+            font-weight: bold; /* Opcional: destaque adicional */
+        }
+        /* Mobile menu styles */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.98);
+            z-index: 50;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .mobile-menu.active {
+            display: flex;
+        }
+        .mobile-menu-btn {
+            display: none;
+        }
+        .menu-link-mobile.active {
+            color: #aa6e69; /* Accent color */
+            font-weight: bold; /* Opcional: destaque adicional */
+        }
+        @media (max-width: 768px) {
+            .desktop-menu {
+                display: none;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .md\:w-2\/5 {
+                margin-bottom: 10px;
+            }
+        }
+        .check-icon {
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            margin-top: 2px;
+            margin-right: 8px;
+        }
+        .convenio-logo-space {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            flex-direction: column;
+            padding: 10px;
+        }
+        .convenio-name {
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            text-align: center;
+        }
+        .specialty-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .specialty-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .icon-container {
+            transition: background-color 0.3s ease;
+        }
+
+        .icon-container:hover {
+            background-color: #8e5b57; /* Cor mais escura para o hover */
+        }
