@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="assets\logos\site_icon.png" sizes="32x32">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -515,110 +516,124 @@
                     Atendo em diferentes locais para sua conveniência. Escolha o que melhor se adapta à sua rotina.
                     Também ofereço consultas online para maior flexibilidade.
                 </p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    
-                    <!-- Local 1 - Horizonte Jardins Particular -->
-                    <div class="location-card bg-white rounded-lg shadow-md p-6">
-                        <div class="flex items-start mb-4">
-                            <div class="bg-[#f5e8e7] p-3 rounded-lg mr-4">
-                                <svg class="w-6 h-6 accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold accent-color">Horizonte Jardins Particular</h3>
-                                <p class="text-gray-600">Horizonte Jardins Office e Hotel, 34-56, Sala 621 - Jardins - Aracaju, SE</p>
-                            </div>
-                        </div>
-                        <div class="pl-14">
-                            <p class="text-gray-700 mb-3">
-                                Ambiente moderno e acolhedor localizado estrategicamente no coração do bairro Jardins, com fácil acesso e equipado para oferecer o melhor atendimento nutricional
-                            </p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Consultas particulares</span>
-                                <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Disponibilidade: Manhã e Tarde</span>
-                            </div>
-                            <div class="flex space-x-4">
-                                <a href="https://maps.app.goo.gl/LnPyis8AAgEm4sUR8" target="_blank" class="text-sm accent-color hover:underline flex items-center">
-                                    <span>Ver no mapa</span>
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-                                </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Local 2 - Clínica Talita Costá -->
-                    <div class="location-card bg-white rounded-lg shadow-md p-6">
-                        <div class="flex items-start mb-4">
-                            <div class="bg-[#f5e8e7] p-3 rounded-lg mr-4">
-                                <svg class="w-6 h-6 accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold accent-color">Clínica Talita Costá</h3>
-                                <p class="text-gray-600">R. Nossa Sra. das Dores, 1099 - Suíça - Aracaju, SE</p>
+                <!-- Swiper Carrossel -->
+                <div class="swiper mySwiper max-w-2xl mx-auto">
+                    <div class="swiper-wrapper">
+                        <!-- Local 1 - Horizonte Jardins Particular -->
+                        <div class="swiper-slide">
+                            <div class="location-card bg-white rounded-lg shadow-md p-6">
+                                <div class="flex items-start mb-4">
+                                    <div class="bg-[#f5e8e7] p-3 rounded-lg mr-4">
+                                        <svg class="w-6 h-6 accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold accent-color">Horizonte Jardins Particular</h3>
+                                        <p class="text-gray-600">Horizonte Jardins Office e Hotel, 34-56, Sala 621 - Jardins - Aracaju, SE</p>
+                                    </div>
+                                </div>
+                                <div class="pl-14">
+                                    <p class="text-gray-700 mb-3">
+                                        Ambiente moderno e acolhedor localizado estrategicamente no coração do bairro Jardins, de fácil acesso e equipado para oferecer o melhor atendimento nutricional.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Consultas particulares</span>
+                                        <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Disponibilidade: Manhã e Tarde</span>
+                                    </div>
+                                    <div class="flex space-x-4">
+                                        <a href="https://maps.app.goo.gl/LnPyis8AAgEm4sUR8" target="_blank" class="text-sm accent-color hover:underline flex items-center">
+                                            <span>Ver no mapa</span>
+                                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="pl-14">
-                            <p class="text-gray-700 mb-3">
-                                Espaço dedicado ao cuidado com a saúde e bem-estar para quem busca um atendimento nutricional de qualidade via convênios.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Consultas por convênio</span>
-                                <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Disponibilidade: Manhã</span>
-                                <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Agendamento direto com a clínica</span>
-                            </div>
-                            <div class="flex space-x-4">
-                                <a href="https://maps.app.goo.gl/a2qFY1tevu3mvo9k9" target="_blank" class="text-sm accent-color hover:underline flex items-center">
-                                    <span>Ver no mapa</span>
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
-                                </svg>
-                                <a href="https://wa.link/joo63a" target="_blank" class="text-sm accent-color hover:underline flex items-center">
-                                    <span>Agendar</span>
-                                    <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Local 3 - Consulta Online -->
-                    <div class="location-card bg-white rounded-lg shadow-md p-6">
-                        <div class="flex items-start mb-4">
-                            <div class="bg-[#f5e8e7] p-3 rounded-lg mr-4">
-                                <svg class="w-6 h-6 accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold accent-color">Consulta Online</h3>
-                                <p class="text-gray-600">Onde você estiver</p>
+                        <!-- Local 2 - Clínica Talita Costá -->
+                        <div class="swiper-slide">
+                            <div class="location-card bg-white rounded-lg shadow-md p-6">
+                                <div class="flex items-start mb-4">
+                                    <div class="bg-[#f5e8e7] p-3 rounded-lg mr-4">
+                                        <svg class="w-6 h-6 accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold accent-color">Clínica Talita Costá</h3>
+                                        <p class="text-gray-600">R. Nossa Sra. das Dores, 1099 - Suíça - Aracaju, SE</p>
+                                    </div>
+                                </div>
+                                <div class="pl-14">
+                                    <p class="text-gray-700 mb-7">
+                                        Espaço dedicado ao cuidado com a saúde e bem-estar para quem busca um atendimento nutricional de qualidade via plano de saúde.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Consultas por convênio</span>
+                                        <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Disponibilidade: Manhã</span>
+                                        <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Agendamento direto com a clínica</span>
+                                    </div>
+                                    <div class="flex space-x-4">
+                                        <a href="https://maps.app.goo.gl/a2qFY1tevu3mvo9k9" target="_blank" class="text-sm accent-color hover:underline flex items-center">
+                                            <span>Ver no mapa</span>
+                                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                                            </svg>
+                                        </a>
+                                        <a href="https://wa.link/joo63a" target="_blank" class="text-sm accent-color hover:underline flex items-center">
+                                            <span>Agendar</span>
+                                            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="pl-14">
-                            <p class="text-gray-700 mb-3">
-                                Atendimento remoto com a mesma qualidade e atenção personalizada. Ideal para quem tem agenda apertada ou mora em outra cidade.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Consultas particulares</span>
-                                <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Horários flexíveis</span>
+
+                        <!-- Local 3 - Consulta Online -->
+                        <div class="swiper-slide">
+                            <div class="location-card bg-white rounded-lg shadow-md p-6">
+                                <div class="flex items-start mb-4">
+                                    <div class="bg-[#f5e8e7] p-3 rounded-lg mr-4">
+                                        <svg class="w-6 h-6 accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold accent-color">Consulta Online</h3>
+                                        <p class="text-gray-600">Onde você estiver</p>
+                                    </div>
+                                </div>
+                                <div class="pl-14">
+                                    <p class="text-gray-700 mb-3 gap-1">
+                                        Atendimento remoto com a mesma qualidade e atenção personalizada. Ideal para quem tem agenda apertada ou mora em outra cidade.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Consultas particulares</span>
+                                        <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Horários flexíveis</span>
+                                    </div>
+                                    <a href="https://wa.me/5579999949012?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20online" target="_blank" class="text-sm accent-color hover:underline flex items-center">
+                                        <span>Agendar consulta online</span>
+                                        <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                            <a href="https://wa.me/5579999949012?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20online" target="_blank" class="text-sm accent-color hover:underline flex items-center">
-                                <span>Agendar consulta online</span>
-                                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                                </svg>
-                            </a>
                         </div>
                     </div>
+                    <!-- Swiper Pagination -->
+                     <div class="swiper-pagination"></div>
+                    <!-- Swiper Navigation -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </section>
@@ -698,6 +713,7 @@
     </div>
 
     <!-- Referência ao arquivo JS externo -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
