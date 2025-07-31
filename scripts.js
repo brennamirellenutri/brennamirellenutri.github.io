@@ -190,3 +190,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+function animateNumbers() {
+  document.querySelectorAll('.selo-numero').forEach(function(el) {
+    const target = +el.getAttribute('data-numero');
+    let count = 0;
+    const increment = Math.ceil(target / 40);
+    function update() {
+      count += increment;
+      if (count >= target) {
+        el.textContent = '+' + target;
+      } else {
+        el.textContent = '+' + count;
+        requestAnimationFrame(update);
+      }
+    }
+    update();
+  });
+}
+window.addEventListener('DOMContentLoaded', animateNumbers);
