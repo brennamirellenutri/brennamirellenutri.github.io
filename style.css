@@ -194,3 +194,89 @@
         .icon-container:hover {
             background-color: #8e5b57; /* Cor mais escura para o hover */
         }
+        /* Scoped styles for Recomendações section (prefixed with reco-) */
+        .reco-category-card {
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+            padding: 1.25rem;
+        }
+        .reco-category-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+        .reco-category-card.reco-active {
+            background: #f5e8e7;
+            box-shadow: 0 12px 30px rgba(170,110,105,0.15);
+        }
+        .reco-category-card.reco-active h3,
+        .reco-category-card.reco-active p {
+            color: #2c2c2c;
+        }
+        .reco-filter-tag {
+            cursor: pointer;
+            transition: background-color 0.2s ease, color 0.2s ease, transform 0.12s ease;
+            background: #f5e8e7;
+            color: #4b4746;
+            border-radius: 999px;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+        .reco-filter-tag:hover { transform: translateY(-2px); }
+        .reco-filter-tag.reco-active {
+            background-color: #aa6e69;
+            color: white;
+            box-shadow: 0 8px 20px rgba(170,110,105,0.12);
+        }
+        .reco-product-card {
+            transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+            padding: 1rem;
+        }
+        .reco-product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+        .reco-hidden {
+            opacity: 0;
+            transform: scale(0.98);
+        }
+        @media (max-width: 768px) {
+            /* ensure recommendations layout fits mobile */
+            #recomendacoes .grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        /* Tabs */
+    /* container for tab buttons */
+        .reco-tab-btn {
+            background: #f0f0f0;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+        }
+        .reco-tab-btn:hover { transform: translateY(-2px); }
+        .reco-tab-btn.reco-tab-active {
+            background: #aa6e69;
+            color: white;
+            box-shadow: 0 6px 18px rgba(170,110,105,0.12);
+        }
+        /* Coupon card */
+        .reco-coupon-card {
+            min-height: 110px;
+            border-radius: 12px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+        .reco-coupon-card .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace; }
+        .reco-copy-btn { border: none; cursor: pointer; padding: 0.4rem 0.6rem; border-radius: 8px; }
+        .reco-copy-btn:hover { opacity: 0.95; transform: translateY(-1px); }
+        .reco-coupon-card h4 { margin-bottom: 0.15rem; }
+        .reco-coupon-card p { margin: 0; }

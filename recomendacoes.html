@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupons e Recomendações - Brenna Mirelle</title>
+    <link rel="icon" type="image/png" href="assets/logos/site_icon.png" sizes="32x32">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <!-- Header with Logo -->
+        <header class="bg-white py-4 px-6 shadow-md sticky top-0 z-40">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="logo-container">
+                    <div class="w-80 h-12 flex items-center justify-center">
+                        <!-- Logo placeholder -->
+                        <img src="assets\logos\Logo 3 Cor 1 Shine .png" alt="Logo 1" class="w-max h-max object-contain">
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu  -->
+                <nav class="desktop-menu">
+                    <ul class="flex space-x-6">
+                        <li><a href="index.html#inicio" class="menu-link">Início</a></li>
+                        <li><a href="index.html#sobre" class="menu-link">Sobre Mim</a></li>
+                        <li><a href="index.html#consultas" class="menu-link">Consultas</a></li>
+                        <li><a href="index.html#convenios" class="menu-link">Convênios</a></li>
+                        <li><a href="index.html#locais" class="menu-link">Locais</a></li>
+                        <li><a href="recomendacoes.html" class="menu-link active">Cupons e Recomendações</a></li>
+                        <li><a href="index.html#contato" class="menu-link">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn focus:outline-none" id="menuBtn">
+                    <svg class="w-6 h-6 accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="absolute top-6 right-6 focus:outline-none" id="closeMenuBtn">
+                <svg class="w-6 h-6 accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <ul class="flex flex-col space-y-6 text-center">
+                <li><a href="index.html#inicio" class="menu-link-mobile">Início</a></li>
+                <li><a href="index.html#sobre" class="menu-link-mobile">Sobre Mim</a></li>
+                <li><a href="index.html#consultas" class="menu-link-mobile">Consultas</a></li>
+                <li><a href="index.html#convenios" class="menu-link-mobile">Convênios</a></li>
+                <li><a href="index.html#locais" class="menu-link-mobile">Locais</a></li>
+                <li><a href="recomendacoes.html" class="menu-link-mobile active">Cupons e Recomendações</a></li>
+                <li><a href="index.html#contato" class="menu-link-mobile">Contato</a></li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero-section py-16 px-6">
+            <div class="container mx-auto text-center">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Cupons e Recomendações</h1>
+                <p class="text-white text-lg opacity-90">Cupons exclusivos e produtos recomendados para sua jornada de saúde</p>
+            </div>
+        </section>
+
+        <!-- Main Content Section -->
+        <section id="recomendacoes" class="bg-white py-16 px-6 flex-grow">
+            <div class="container mx-auto">
+
+                <!-- Tabs controls -->
+                <div class="reco-tabs max-w-md mx-auto mb-8 flex items-center justify-center gap-2">
+                    <button class="reco-tab-btn px-4 py-2 rounded-full reco-tab-active" data-tab="coupons">Cupons</button>
+                    <button class="reco-tab-btn px-4 py-2 rounded-full" data-tab="recomendacoes">Recomendações</button>
+                </div>
+
+                <div class="reco-tab-contents">
+                    <!-- Coupons tab (default visible) -->
+                    <div class="reco-tab-content reco-tab-coupons">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6" id="reco-coupons-grid">
+                            <!-- OceanDrop -->
+                            <div class="reco-coupon-card relative bg-gradient-to-r from-[#fff7e6] to-[#fff1e0] border-l-4 border-[#aa6e69] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                                <span class="absolute top-4 right-4 bg-[#aa6e69] text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+                                <div class="mb-4">
+                                    <h4 class="font-bold text-lg accent-color">OceanDrop</h4>
+                                </div>
+                                <div class="mb-4 p-3 bg-[#f5e8e7] rounded-lg">
+                                    <p class="text-xs text-gray-600 mb-1">Código de desconto:</p>
+                                    <span class="font-mono font-bold text-sm">BMNUTRI20</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="reco-copy-btn flex-1 px-3 py-2 rounded bg-[#aa6e69] text-white text-sm font-medium hover:bg-[#8e5b57] transition-colors">Copiar</button>
+                                    <a href="https://www.oceandrop.com.br" target="_blank" class="flex-1 px-3 py-2 rounded bg-[#f5e8e7] text-[#aa6e69] text-sm font-medium hover:bg-[#f0e0db] transition-colors text-center">Visitar</a>
+                                </div>
+                            </div>
+
+                            <!-- Sanavita -->
+                            <div class="reco-coupon-card relative bg-gradient-to-r from-[#eef9ff] to-[#eef6ff] border-l-4 border-[#8e5b57] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                                <span class="absolute top-4 right-4 bg-[#aa6e69] text-white text-xs font-semibold px-2 py-1 rounded">15% OFF</span>
+                                <div class="mb-4">
+                                    <h4 class="font-bold text-lg accent-color">Sanavita</h4>
+                                </div>
+                                <div class="mb-4 p-3 bg-[#f5e8e7] rounded-lg">
+                                    <p class="text-xs text-gray-600 mb-1">Código de desconto:</p>
+                                    <span class="font-mono font-bold text-sm">NUTRI15</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="reco-copy-btn flex-1 px-3 py-2 rounded bg-[#aa6e69] text-white text-sm font-medium hover:bg-[#8e5b57] transition-colors">Copiar</button>
+                                    <a href="https://www.sanavita.com.br" target="_blank" class="flex-1 px-3 py-2 rounded bg-[#f5e8e7] text-[#aa6e69] text-sm font-medium hover:bg-[#f0e0db] transition-colors text-center">Visitar</a>
+                                </div>
+                            </div>
+
+                            <!-- Vitafor -->
+                            <div class="reco-coupon-card relative bg-gradient-to-r from-[#f0fff4] to-[#ecfff0] border-l-4 border-[#4CAF50] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                                <span class="absolute top-4 right-4 bg-[#aa6e69] text-white text-xs font-semibold px-2 py-1 rounded">25% OFF</span>
+                                <div class="mb-4">
+                                    <h4 class="font-bold text-lg accent-color">Vitafor</h4>
+                                </div>
+                                <div class="mb-4 p-3 bg-[#f5e8e7] rounded-lg">
+                                    <p class="text-xs text-gray-600 mb-1">Código de desconto:</p>
+                                    <span class="font-mono font-bold text-sm">BM21649VITAFOR</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="reco-copy-btn flex-1 px-3 py-2 rounded bg-[#aa6e69] text-white text-sm font-medium hover:bg-[#8e5b57] transition-colors">Copiar</button>
+                                    <a href="https://www.vitafor.com.br" target="_blank" class="flex-1 px-3 py-2 rounded bg-[#f5e8e7] text-[#aa6e69] text-sm font-medium hover:bg-[#f0e0db] transition-colors text-center">Visitar</a>
+                                </div>
+                            </div>
+
+                            <!-- True Source -->
+                            <div class="reco-coupon-card relative bg-gradient-to-r from-[#f7eefc] to-[#f5eef9] border-l-4 border-[#9C27B0] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                                <span class="absolute top-4 right-4 bg-[#aa6e69] text-white text-xs font-semibold px-2 py-1 rounded">15% OFF</span>
+                                <div class="mb-4">
+                                    <h4 class="font-bold text-lg accent-color">True Source</h4>
+                                </div>
+                                <div class="mb-4 p-3 bg-[#f5e8e7] rounded-lg">
+                                    <p class="text-xs text-gray-600 mb-1">Código de desconto:</p>
+                                    <span class="font-mono font-bold text-sm">PACIENTETRUE</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="reco-copy-btn flex-1 px-3 py-2 rounded bg-[#aa6e69] text-white text-sm font-medium hover:bg-[#8e5b57] transition-colors">Copiar</button>
+                                    <a href="https://www.truesource.com.br" target="_blank" class="flex-1 px-3 py-2 rounded bg-[#f5e8e7] text-[#aa6e69] text-sm font-medium hover:bg-[#f0e0db] transition-colors text-center">Visitar</a>
+                                </div>
+                            </div>
+
+                            <!-- Nutrify -->
+                            <div class="reco-coupon-card relative bg-gradient-to-r from-[#fffbe6] to-[#fff7d9] border-l-4 border-[#FFC107] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                                <span class="absolute top-4 right-4 bg-[#aa6e69] text-white text-xs font-semibold px-2 py-1 rounded">10% OFF</span>
+                                <div class="mb-4">
+                                    <h4 class="font-bold text-lg accent-color">Nutrify</h4>
+                                </div>
+                                <div class="mb-4 p-3 bg-[#f5e8e7] rounded-lg">
+                                    <p class="text-xs text-gray-600 mb-1">Código de desconto:</p>
+                                    <span class="font-mono font-bold text-sm">se361</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="reco-copy-btn flex-1 px-3 py-2 rounded bg-[#aa6e69] text-white text-sm font-medium hover:bg-[#8e5b57] transition-colors">Copiar</button>
+                                    <a href="https://www.nutrify.com.br" target="_blank" class="flex-1 px-3 py-2 rounded bg-[#f5e8e7] text-[#aa6e69] text-sm font-medium hover:bg-[#f0e0db] transition-colors text-center">Visitar</a>
+                                </div>
+                            </div>
+
+                            <!-- Central Nutrition -->
+                            <div class="reco-coupon-card relative bg-gradient-to-r from-[#fff7e6] to-[#fff1e0] border-l-4 border-[#aa6e69] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                                <span class="absolute top-4 right-4 bg-[#aa6e69] text-white text-xs font-semibold px-2 py-1 rounded">10% OFF</span>
+                                <div class="mb-4">
+                                    <h4 class="font-bold text-lg accent-color">Central Nutrition</h4>
+                                </div>
+                                <div class="mb-4 p-3 bg-[#f5e8e7] rounded-lg">
+                                    <p class="text-xs text-gray-600 mb-1">Código de desconto:</p>
+                                    <span class="font-mono font-bold text-sm">BRENNANUTRI</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="reco-copy-btn flex-1 px-3 py-2 rounded bg-[#aa6e69] text-white text-sm font-medium hover:bg-[#8e5b57] transition-colors">Copiar</button>
+                                    <a href="https://www.centralnutrition.com.br" target="_blank" class="flex-1 px-3 py-2 rounded bg-[#f5e8e7] text-[#aa6e69] text-sm font-medium hover:bg-[#f0e0db] transition-colors text-center">Visitar</a>
+                                </div>
+                            </div>
+
+                            <!-- Belt Nutrition -->
+                            <div class="reco-coupon-card relative bg-gradient-to-r from-[#e8fbfa] to-[#e3f7f6] border-l-4 border-[#00BCD4] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                                <span class="absolute top-4 right-4 bg-[#aa6e69] text-white text-xs font-semibold px-2 py-1 rounded">10% OFF</span>
+                                <div class="mb-4">
+                                    <h4 class="font-bold text-lg accent-color">Belt Nutrition</h4>
+                                </div>
+                                <div class="mb-4 p-3 bg-[#f5e8e7] rounded-lg">
+                                    <p class="text-xs text-gray-600 mb-1">Código de desconto:</p>
+                                    <span class="font-mono font-bold text-sm">BELTP494012</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="reco-copy-btn flex-1 px-3 py-2 rounded bg-[#aa6e69] text-white text-sm font-medium hover:bg-[#8e5b57] transition-colors">Copiar</button>
+                                    <a href="https://www.beltnutrition.com.br" target="_blank" class="flex-1 px-3 py-2 rounded bg-[#f5e8e7] text-[#aa6e69] text-sm font-medium hover:bg-[#f0e0db] transition-colors text-center">Visitar</a>
+                                </div>
+                            </div>
+
+                            <!-- Puravida -->
+                            <div class="reco-coupon-card relative bg-gradient-to-r from-[#fff0f4] to-[#fff5f8] border-l-4 border-[#E91E63] p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                                <span class="absolute top-4 right-4 bg-[#aa6e69] text-white text-xs font-semibold px-2 py-1 rounded">20% OFF</span>
+                                <div class="mb-4">
+                                    <h4 class="font-bold text-lg accent-color">Puravida</h4>
+                                </div>
+                                <div class="mb-4 p-3 bg-[#f5e8e7] rounded-lg">
+                                    <p class="text-xs text-gray-600 mb-1">Código de desconto:</p>
+                                    <span class="font-mono font-bold text-sm">BB36388</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="reco-copy-btn flex-1 px-3 py-2 rounded bg-[#aa6e69] text-white text-sm font-medium hover:bg-[#8e5b57] transition-colors">Copiar</button>
+                                    <a href="https://www.puravida.com.br" target="_blank" class="flex-1 px-3 py-2 rounded bg-[#f5e8e7] text-[#aa6e69] text-sm font-medium hover:bg-[#f0e0db] transition-colors text-center">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 text-center">Clique em "Copiar" para usar o código no checkout ou "Visitar" para ir direto ao site da marca.</p>
+                    </div>
+
+                    <!-- Recomendations tab (temporarily hidden, kept in DOM) -->
+                    <div class="reco-tab-content reco-tab-recomendacoes hidden">
+                        <div class="py-16 text-center">
+                            <h3 class="text-2xl font-semibold mb-2">Recomendações — Em breve</h3>
+                            <p class="text-gray-600 mb-6">Estamos preparando as recomendações. Elas estão preservadas nesta página e serão visíveis em uma atualização futura.</p>
+                            <!-- <p class="text-sm text-gray-500">(Se precisar visualizar o conteúdo completo para edição, remova a classe <code>hidden</code> no elemento interno.)</p> -->
+                        </div>
+
+                        <!-- Hidden recommendations content (kept for future use) -->
+                        <div id="reco-hidden-content" class="hidden">
+                            <!-- Categories (click to filter) -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
+                                <div class="reco-category-card bg-white p-8 rounded-2xl text-center cursor-pointer reco-category-all shadow-md hover:shadow-lg transition-all hover:-translate-y-2" data-category="all">
+                                    <div class="text-5xl mb-4">✓</div>
+                                    <h3 class="font-semibold text-lg text-gray-800">Todos</h3>
+                                    <p class="text-sm text-gray-600 mt-2">Ver todos os produtos</p>
+                                </div>
+                                <div class="reco-category-card bg-white p-8 rounded-2xl text-center cursor-pointer shadow-md hover:shadow-lg transition-all hover:-translate-y-2" data-category="iogurtes">
+                                    <div class="text-5xl mb-4">🥛</div>
+                                    <h3 class="font-semibold text-lg text-gray-800">Iogurtes</h3>
+                                    <p class="text-sm text-gray-600 mt-2">Opções saudáveis</p>
+                                </div>
+                                <div class="reco-category-card bg-white p-8 rounded-2xl text-center cursor-pointer shadow-md hover:shadow-lg transition-all hover:-translate-y-2" data-category="omega3">
+                                    <div class="text-5xl mb-4">🐟</div>
+                                    <h3 class="font-semibold text-lg text-gray-800">Ômega 3</h3>
+                                    <p class="text-sm text-gray-600 mt-2">Suplementos de qualidade</p>
+                                </div>
+                                <div class="reco-category-card bg-white p-8 rounded-2xl text-center cursor-pointer shadow-md hover:shadow-lg transition-all hover:-translate-y-2" data-category="whey">
+                                    <div class="text-5xl mb-4">💪</div>
+                                    <h3 class="font-semibold text-lg text-gray-800">Whey</h3>
+                                    <p class="text-sm text-gray-600 mt-2">Proteínas para objetivos</p>
+                                </div>
+                                <div class="reco-category-card bg-white p-8 rounded-2xl text-center cursor-pointer shadow-md hover:shadow-lg transition-all hover:-translate-y-2" data-category="creatina">
+                                    <div class="text-5xl mb-4">⚡</div>
+                                    <h3 class="font-semibold text-lg text-gray-800">Creatina</h3>
+                                    <p class="text-sm text-gray-600 mt-2">Performance e energia</p>
+                                </div>
+                            </div>
+
+                            <div id="reco-products-section">
+                                <h3 id="reco-products-title" class="text-center text-xl font-semibold accent-color mb-6">Todos os Produtos</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="reco-products-grid">
+                                    <div class="reco-product-card bg-white rounded-lg shadow p-4" data-category="iogurtes">
+                                        <div class="h-40 bg-gray-100 mb-4 flex items-center justify-center">Iogurte Danone</div>
+                                        <h4 class="font-semibold">Iogurte Natural Danone Integral</h4>
+                                        <div class="mt-2 text-sm text-gray-600">Integral • Desnatado</div>
+                                    </div>
+
+                                    <div class="reco-product-card bg-white rounded-lg shadow p-4" data-category="omega3">
+                                        <div class="h-40 bg-gray-100 mb-4 flex items-center justify-center">Ômega 3</div>
+                                        <h4 class="font-semibold">Ômega 3 Premium</h4>
+                                        <div class="mt-2 text-sm text-gray-600">Concentrado • Alta pureza</div>
+                                    </div>
+
+                                    <div class="reco-product-card bg-white rounded-lg shadow p-4" data-category="whey">
+                                        <div class="h-40 bg-gray-100 mb-4 flex items-center justify-center">Whey</div>
+                                        <h4 class="font-semibold">Whey Protein Isolado</h4>
+                                        <div class="mt-2 text-sm text-gray-600">Isolado • Baixo teor de lactose</div>
+                                    </div>
+
+                                    <div class="reco-product-card bg-white rounded-lg shadow p-4" data-category="creatina">
+                                        <div class="h-40 bg-gray-100 mb-4 flex items-center justify-center">Creatina</div>
+                                        <h4 class="font-semibold">Creatina Monohidratada</h4>
+                                        <div class="mt-2 text-sm text-gray-600">Pura • Consumo diário recomendado</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#8e5b57] text-white py-8 px-6">
+            <div class="container mx-auto">
+                <div class="flex flex-wrap justify-between items-center gap-8">
+                    <!-- Logo e Descrição -->
+                    <div class="flex-1 text-center md:text-left">
+                        <div class="footer-logo w-40 h-10 flex items-center justify-center mx-auto md:mx-0 mb-4">
+                            <img src="assets\logos\Logo 3 Cor 1 Shine .png" alt="Logo 1" class="w-full h-full object-contain">
+                        </div>
+                        <p class="text-[#f5e8e7] text-sm">Reeducação alimentar de forma simples e saudável</p>
+                    </div>
+        
+                    <!-- Links Rápidos -->
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="text-lg font-semibold mb-4">Links Rápidos</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="index.html#inicio" class="hover:underline">Início</a></li>
+                            <li><a href="index.html#sobre" class="hover:underline">Sobre Mim</a></li>
+                            <li><a href="index.html#consultas" class="hover:underline">Consultas</a></li>
+                            <li><a href="index.html#convenios" class="hover:underline">Convênios</a></li>
+                            <li><a href="index.html#locais" class="hover:underline">Locais</a></li>
+                            <li><a href="index.html#contato" class="hover:underline">Contato</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Redes Sociais -->
+                    <div class="flex-1 text-center md:text-right">
+                        <div class="flex justify-center md:justify-end space-x-4 mb-4">
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/brennamirellenutri/" target="_blank" class="text-white hover:text-[#f5e8e7] transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <!-- Email -->
+                            <a href="mailto:brennamirellenutri@gmail.com" class="text-white hover:text-[#f5e8e7] transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="text-[#f5e8e7] text-sm">&copy; 2024 Todos os direitos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Botão Voltar ao Topo -->
+        <button id="backToTopBtn" class="fixed bottom-6 right-6 bg-[#8e5b57] text-white rounded-full p-3 shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-[#7d4f4c] focus:outline-none z-50">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+            </svg>
+        </button>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Initialize recomendacoes on this page
+        window.addEventListener('DOMContentLoaded', initRecomendacoes);
+    </script>
+</body>
+</html>
