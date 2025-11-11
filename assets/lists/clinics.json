@@ -1,0 +1,14 @@
+{
+  "clinics": [
+    {
+      "id": "talita",
+      "name": "Clínica Talita Costá",
+      "booking_url": "https://wa.link/joo63a"
+    },
+    {
+      "id": "instituto",
+      "name": "Clínica Instituto da Dor",
+      "booking_url": "https://wa.link/d3aifi"
+    }
+  ]
+}

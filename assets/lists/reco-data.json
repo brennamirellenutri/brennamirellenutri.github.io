@@ -1,0 +1,613 @@
+﻿[
+    {
+        "id":  1,
+        "title":  "Iogurte Natural Danone Integral",
+        "category":  "Iogurte",
+        "subcategory":  "Integral",
+        "image":  "assets/images/recomendacoes/image1.png",
+        "image_filename":  "image1.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  2,
+        "title":  "Iogurte Natural Nestle Integral",
+        "category":  "Iogurte",
+        "subcategory":  "Integral",
+        "image":  "assets/images/recomendacoes/image2.png",
+        "image_filename":  "image2.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  3,
+        "title":  "Iogurte Natural Itambe Integral",
+        "category":  "Iogurte",
+        "subcategory":  "Integral",
+        "image":  "assets/images/recomendacoes/image3.png",
+        "image_filename":  "image3.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  4,
+        "title":  "Iogurte Natural Betânia Integral",
+        "category":  "Iogurte",
+        "subcategory":  "Integral",
+        "image":  "assets/images/recomendacoes/image4.png",
+        "image_filename":  "image4.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  5,
+        "title":  "Iogurte Natural Danone Desnatado",
+        "category":  "Iogurte",
+        "subcategory":  "Desnatado",
+        "image":  "assets/images/recomendacoes/image5.png",
+        "image_filename":  "image5.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  6,
+        "title":  "Iogurte Natural Nestle Desnatado",
+        "category":  "Iogurte",
+        "subcategory":  "Desnatado",
+        "image":  "assets/images/recomendacoes/image6.png",
+        "image_filename":  "image6.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  7,
+        "title":  "Iogurte Natural Itambe Desnatado",
+        "category":  "Iogurte",
+        "subcategory":  "Desnatado",
+        "image":  "assets/images/recomendacoes/image7.png",
+        "image_filename":  "image7.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  8,
+        "title":  "Iogurte Natural Betânia Desnatado",
+        "category":  "Iogurte",
+        "subcategory":  "Desnatado",
+        "image":  "assets/images/recomendacoes/image8.png",
+        "image_filename":  "image8.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  9,
+        "title":  "Iogurte Zero Molico",
+        "category":  "Iogurte",
+        "subcategory":  "Zero lactose",
+        "image":  "assets/images/recomendacoes/image9.png",
+        "image_filename":  "image9.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  10,
+        "title":  "Iogurte Zero Itambe",
+        "category":  "Iogurte",
+        "subcategory":  "Zero lactose",
+        "image":  "assets/images/recomendacoes/image10.png",
+        "image_filename":  "image10.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  11,
+        "title":  "Iogurte Zero Corpus",
+        "category":  "Iogurte",
+        "subcategory":  "Zero lactose",
+        "image":  "assets/images/recomendacoes/image11.png",
+        "image_filename":  "image11.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  12,
+        "title":  "Iogurte Natural Desnatado Zero Lactose Betania",
+        "category":  "Iogurte",
+        "subcategory":  "Zero lactose",
+        "image":  "assets/images/recomendacoes/image12.png",
+        "image_filename":  "image12.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  13,
+        "title":  "Iogurte Batavo Pense Zero",
+        "category":  "Iogurte",
+        "subcategory":  "Zero lactose",
+        "image":  "assets/images/recomendacoes/image13.png",
+        "image_filename":  "image13.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  14,
+        "title":  "Iogurte Natural Desnatado Zero Lactose Verde Campo",
+        "category":  "Iogurte",
+        "subcategory":  "Zero lactose",
+        "image":  "assets/images/recomendacoes/image14.png",
+        "image_filename":  "image14.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  15,
+        "title":  "OMEGA 3 EQUALIV",
+        "category":  "Omega",
+        "subcategory":  "Tradicional",
+        "image":  "assets/images/recomendacoes/image15.jpeg",
+        "image_filename":  "image15.jpeg",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  16,
+        "title":  "OMEGA 3 ESSENTIAL ",
+        "category":  "Omega",
+        "subcategory":  "Tradicional",
+        "image":  "assets/images/recomendacoes/image16.png",
+        "image_filename":  "image16.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  17,
+        "title":  "OMEGA 3 FDC",
+        "category":  "Omega",
+        "subcategory":  "Tradicional",
+        "image":  "assets/images/recomendacoes/image17.png",
+        "image_filename":  "image17.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  18,
+        "title":  "OMEGA 3 FISH OIL DUX",
+        "category":  "Omega",
+        "subcategory":  "Tradicional",
+        "image":  "assets/images/recomendacoes/image18.png",
+        "image_filename":  "image18.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  19,
+        "title":  "OMEGA 3 INTEGRAL MEDICA",
+        "category":  "Omega",
+        "subcategory":  "Tradicional",
+        "image":  "assets/images/recomendacoes/image19.png",
+        "image_filename":  "image19.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  20,
+        "title":  "OMEGA 3 NUTRIFY",
+        "category":  "Omega",
+        "subcategory":  "Tradicional",
+        "image":  "assets/images/recomendacoes/image20.png",
+        "image_filename":  "image20.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  21,
+        "title":  "OMEGA 3 OMEGAFOR PLUS VITAFOR",
+        "category":  "Omega",
+        "subcategory":  "Tradicional",
+        "image":  "assets/images/recomendacoes/image21.png",
+        "image_filename":  "image21.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  22,
+        "title":  "OMEGA 3 NUTRIFY VEGANO",
+        "category":  "Omega",
+        "subcategory":  "Vegano",
+        "image":  "assets/images/recomendacoes/image22.png",
+        "image_filename":  "image22.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  23,
+        "title":  "OMEGA 3 OCEAN DROP VEGANO",
+        "category":  "Omega",
+        "subcategory":  "Vegano",
+        "image":  "assets/images/recomendacoes/image23.png",
+        "image_filename":  "image23.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  24,
+        "title":  "OMEGA 3 FISH OIL DUX",
+        "category":  "Omega",
+        "subcategory":  "Vegano",
+        "image":  "assets/images/recomendacoes/image24.png",
+        "image_filename":  "image24.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  25,
+        "title":  "OMEGA 3 ESSENTIAL",
+        "category":  "Omega",
+        "subcategory":  "Vegano",
+        "image":  "assets/images/recomendacoes/image25.png",
+        "image_filename":  "image25.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  26,
+        "title":  "ADAPTOGEN TASTY WHEY",
+        "category":  "Whey",
+        "subcategory":  "Concentrado",
+        "image":  "assets/images/recomendacoes/image26.png",
+        "image_filename":  "image26.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  27,
+        "title":  "MAX TITANIUM 100% WHEY",
+        "category":  "Whey",
+        "subcategory":  "Concentrado",
+        "image":  "assets/images/recomendacoes/image27.png",
+        "image_filename":  "image27.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  28,
+        "title":  "MAX TITANIUM TOP WHEY 3W",
+        "category":  "Whey",
+        "subcategory":  "Concentrado",
+        "image":  "assets/images/recomendacoes/image28.png",
+        "image_filename":  "image28.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  29,
+        "title":  "WHEY DUX NUTRITION CONCENTRADO",
+        "category":  "Whey",
+        "subcategory":  "Concentrado",
+        "image":  "assets/images/recomendacoes/image29.png",
+        "image_filename":  "image29.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  30,
+        "title":  "WHEY GROWTH 80%",
+        "category":  "Whey",
+        "subcategory":  "Concentrado",
+        "image":  "assets/images/recomendacoes/image30.png",
+        "image_filename":  "image30.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  31,
+        "title":  "WHEY NUTRATA W100",
+        "category":  "Whey",
+        "subcategory":  "Concentrado",
+        "image":  "assets/images/recomendacoes/image31.png",
+        "image_filename":  "image31.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  32,
+        "title":  "WHEY INTEGRAL MEDICA 100%",
+        "category":  "Whey",
+        "subcategory":  "Concentrado",
+        "image":  "assets/images/recomendacoes/image32.png",
+        "image_filename":  "image32.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  33,
+        "title":  "WHEY NUTRATA GREGO",
+        "category":  "Whey",
+        "subcategory":  "Concentrado",
+        "image":  "assets/images/recomendacoes/image33.png",
+        "image_filename":  "image33.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  34,
+        "title":  "WHEY VITAFOR FORT",
+        "category":  "Whey",
+        "subcategory":  "Concentrado",
+        "image":  "assets/images/recomendacoes/image34.png",
+        "image_filename":  "image34.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  35,
+        "title":  "WHEY VITAFOR FORT 3W",
+        "category":  "Whey",
+        "subcategory":  "Concentrado",
+        "image":  "assets/images/recomendacoes/image35.png",
+        "image_filename":  "image35.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  36,
+        "title":  "WHEY DUX NUTRITION ISOLADO",
+        "category":  "Whey",
+        "subcategory":  "Isolado",
+        "image":  "assets/images/recomendacoes/image36.png",
+        "image_filename":  "image36.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  37,
+        "title":  "WHEY ESSENTIAL CACAOWHEY",
+        "category":  "Whey",
+        "subcategory":  "Isolado",
+        "image":  "assets/images/recomendacoes/image37.png",
+        "image_filename":  "image37.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  38,
+        "title":  "WHEY GROWTH ISOLADO 90%",
+        "category":  "Whey",
+        "subcategory":  "Isolado",
+        "image":  "assets/images/recomendacoes/image38.png",
+        "image_filename":  "image38.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  39,
+        "title":  "WHEY INTEGRAL MEDICA ISOLADO",
+        "category":  "Whey",
+        "subcategory":  "Isolado",
+        "image":  "assets/images/recomendacoes/image39.png",
+        "image_filename":  "image39.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  40,
+        "title":  "WHEY MAX TITANIUM ISOWHEY",
+        "category":  "Whey",
+        "subcategory":  "Isolado",
+        "image":  "assets/images/recomendacoes/image40.png",
+        "image_filename":  "image40.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  41,
+        "title":  "WHEY NUTRATA ISOWHEY",
+        "category":  "Whey",
+        "subcategory":  "Isolado",
+        "image":  "assets/images/recomendacoes/image41.png",
+        "image_filename":  "image41.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  42,
+        "title":  "WHEY VITAFOR ISOFORT",
+        "category":  "Whey",
+        "subcategory":  "Isolado",
+        "image":  "assets/images/recomendacoes/image42.png",
+        "image_filename":  "image42.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  43,
+        "title":  "WHEY VITAFOR ISOFORT PLANT VEGANO",
+        "category":  "Whey",
+        "subcategory":  "Vegano",
+        "image":  "assets/images/recomendacoes/image43.png",
+        "image_filename":  "image43.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  44,
+        "title":  "WHEY ESSENTIAL VEGGIE PROTEIN",
+        "category":  "Whey",
+        "subcategory":  "Vegano",
+        "image":  "assets/images/recomendacoes/image44.png",
+        "image_filename":  "image44.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  45,
+        "title":  "WHEY NUTRIFY VEGANPRO",
+        "category":  "Whey",
+        "subcategory":  "Vegano",
+        "image":  "assets/images/recomendacoes/image45.png",
+        "image_filename":  "image45.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  46,
+        "title":  "WHEY DUX NUTRITION FRESHVEGAN",
+        "category":  "Whey",
+        "subcategory":  "Vegano",
+        "image":  "assets/images/recomendacoes/image46.png",
+        "image_filename":  "image46.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  47,
+        "title":  "WHEY GROWTH BLEND VEGAN",
+        "category":  "Whey",
+        "subcategory":  "Vegano",
+        "image":  "assets/images/recomendacoes/image47.png",
+        "image_filename":  "image47.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  48,
+        "title":  "Creatina Monohidratada Growth",
+        "category":  "Creatina",
+        "image":  "assets/images/recomendacoes/image48.png",
+        "image_filename":  "image48.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  49,
+        "title":  "Creatina Creapure Growth",
+        "category":  "Creatina",
+        "image":  "assets/images/recomendacoes/image49.png",
+        "image_filename":  "image49.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  50,
+        "title":  "Creatina Creapure Max Titanium",
+        "category":  "Creatina",
+        "image":  "assets/images/recomendacoes/image50.png",
+        "image_filename":  "image50.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  51,
+        "title":  "Creatina Creapure Dux",
+        "category":  "Creatina",
+        "image":  "assets/images/recomendacoes/image51.png",
+        "image_filename":  "image51.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  52,
+        "title":  "Creatina Black Skull",
+        "category":  "Creatina",
+        "image":  "assets/images/recomendacoes/image52.png",
+        "image_filename":  "image52.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  53,
+        "title":  "Creatina Integral Medica",
+        "category":  "Creatina",
+        "image":  "assets/images/recomendacoes/image53.png",
+        "image_filename":  "image53.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  54,
+        "title":  "Creatina Dark Lab",
+        "category":  "Creatina",
+        "image":  "assets/images/recomendacoes/image54.png",
+        "image_filename":  "image54.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  55,
+        "title":  "Creatina Masterway",
+        "category":  "Creatina",
+        "image":  "assets/images/recomendacoes/image55.png",
+        "image_filename":  "image55.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  56,
+        "title":  "Creatina Soldiers",
+        "category":  "Creatina",
+        "image":  "assets/images/recomendacoes/image56.png",
+        "image_filename":  "image56.png",
+        "badges":  [
+
+                   ]
+    }
+]
+
+
+
+
