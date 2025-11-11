@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "nome": "Casse",
+    "logo": "assets/images/convenios/CASSE.png",
+    "ativo": true,
+    "clinics": ["talita"]
+  },
+  {
+    "id": 2,
+    "nome": "Unimed",
+    "logo": "assets/images/convenios/unimed.png",
+    "ativo": true,
+    "clinics": ["talita"]
+  },
+  {
+    "id": 3,
+    "nome": "Codevasf",
+    "logo": "assets/images/convenios/codevasf.jpeg",
+    "ativo": false
+  },
+  {
+    "id": 4,
+    "nome": "Casec",
+    "logo": "assets/images/convenios/casec.png",
+    "ativo": false
+  },
+  {
+    "id": 5,
+    "nome": "Cassind",
+    "logo": "assets/images/convenios/cassind.jpeg",
+    "ativo": false
+  },
+  {
+    "id": 6,
+    "nome": "Plamed",
+    "logo": "assets/images/convenios/plamed.jpg",
+    "ativo": true,
+    "clinics": ["talita"]
+  },
+  {
+    "id": 7,
+    "nome": "Marinha do Brasil",
+    "logo": "assets/images/convenios/marinha.png",
+    "ativo": false
+  },
+  {
+    "id": 8,
+    "nome": "Assec",
+    "logo": "assets/images/convenios/assec.png",
+    "ativo": true,
+    "clinics": ["talita"]
+  },
+  {
+    "id": 9,
+    "nome": "Valesaúde",
+    "logo": "assets/images/convenios/vale.webp",
+    "ativo": true,
+    "clinics": ["talita"]
+  },
+  {
+    "id": 10,
+    "nome": "Saúde Caixa",
+    "logo": "assets/images/convenios/saude caixa.svg",
+    "ativo": false
+  },
+  {
+    "id": 11,
+    "nome": "Deso",
+    "logo": "assets/images/convenios/deso.svg",
+    "ativo": false
+  },
+  {
+    "id": 12,
+    "nome": "Amil",
+    "logo": "assets/images/convenios/plano-amil.png",
+    "ativo": true,
+    "clinics": ["instituto"]
+  },
+  {
+    "id": 13,
+    "nome": "Geap",
+    "logo": "assets/images/convenios/geap-logo.png",
+    "ativo": true,
+    "clinics": ["instituto"]
+  },
+  {
+    "id": 14,
+    "nome": "Capesaúde",
+    "logo": "assets/images/convenios/logo-capesaude.svg",
+    "ativo": true,
+    "clinics": ["instituto"]
+  },
+  {
+    "id": 15,
+    "nome": "Cassi",
+    "logo": "assets/images/convenios/cassi.png",
+    "ativo": false
+  },
+  {
+    "id": 16,
+    "nome": "Outros",
+    "logo": "assets/images/convenios/outros.png",
+    "ativo": true
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "brand": "OceanDrop",
+    "code": "BMNUTRI20",
+    "discount": "20% OFF",
+    "url": "https://www.oceandrop.com.br"
+  },
+  {
+    "id": 2,
+    "brand": "Sanavita",
+    "code": "NUTRI15",
+    "discount": "15% OFF",
+    "url": "https://www.sanavita.com.br"
+  },
+  {
+    "id": 3,
+    "brand": "Vitafor",
+    "code": "BM21649VITAFOR",
+    "discount": "25% OFF",
+    "url": "https://www.vitafor.com.br"
+  },
+  {
+    "id": 4,
+    "brand": "True Source",
+    "code": "PACIENTETRUE",
+    "discount": "15% OFF",
+    "url": "https://www.truesource.com.br"
+  },
+  {
+    "id": 5,
+    "brand": "Nutrify",
+    "code": "se361",
+    "discount": "10% OFF",
+    "url": "https://www.nutrify.com.br"
+  },
+  {
+    "id": 6,
+    "brand": "Central Nutrition",
+    "code": "BRENNANUTRI",
+    "discount": "10% OFF",
+    "url": "https://www.centralnutrition.com.br"
+  },
+  {
+    "id": 7,
+    "brand": "Belt Nutrition",
+    "code": "BELTP494012",
+    "discount": "10% OFF",
+    "url": "https://www.beltnutrition.com.br"
+  },
+  {
+    "id": 8,
+    "brand": "Puravida",
+    "code": "BB36388",
+    "discount": "20% OFF",
+    "url": "https://www.puravida.com.br"
+  }
+]
