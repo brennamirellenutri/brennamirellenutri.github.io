@@ -605,6 +605,17 @@
         "badges":  [
 
                    ]
+    },
+    {
+        "id":  57,
+        "title":  "Best Whey Protein",
+        "category":  "Whey",
+        "subcategory":  "Concentrado",
+        "image":  "assets/images/recomendacoes/image57.png",
+        "image_filename":  "image57.png",
+        "badges":  [
+
+                   ]
     }
 ]
 

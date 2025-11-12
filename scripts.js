@@ -198,7 +198,7 @@ function initRecomendacoes() {
     if (!section) return;
 
     // Feature flag: esconder produtos de recomendação e mostrar placeholder "Em breve"
-    const RECO_PRODUCTS_LOCKED = true; // toggle para false quando quiser reativar
+    const RECO_PRODUCTS_LOCKED = false; // toggle para false quando quiser reativar
 
     // Tabs
     const tabButtons = section.querySelectorAll('.reco-tab-btn');
@@ -386,10 +386,10 @@ function initRecomendacoes() {
                 card.setAttribute('data-category', filterKey);
                 card.setAttribute('data-subcategory', subcat);
                 card.innerHTML = `
-                    <div class="bg-gray-100 flex items-center justify-center overflow-hidden p-4 min-h-48">
+                    <div class="reco-img-figure">
                         <img src="${'assets/images/recomendacoes/' + product.image_filename}" 
                              alt="${product.title}" 
-                             class="max-w-full max-h-96 object-contain"
+                             class="reco-img"
                              onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;text-xs text-gray-400&quot;>Imagem não carregada</div>'">
                     </div>
                     <div class="p-4">
@@ -571,8 +571,8 @@ function initRecomendacoes() {
         obs.observe(node);
     });
 
-    // initialize: show recomendacoes tab by default, load products and coupons, then setup filters and coupon buttons
-    showTab('recomendacoes');
+    // initialize: show coupons tab by default, load products and coupons, then setup filters and coupon buttons
+    showTab('coupons');
     loadAndRenderProducts().then(() => {
         initializeRecomendacoesFilters();
     });
