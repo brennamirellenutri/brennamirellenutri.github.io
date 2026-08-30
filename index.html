@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://www.googletagmanager.com https://www.google-analytics.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; img-src 'self' data: https: blob:; font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com data:; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me; upgrade-insecure-requests;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), accelerometer=(), gyroscope=()">
     <title>Brenna Mirelle | Nutricionista</title>
     <link rel="icon" type="image/png" href="assets\images\logos\site_icon.png" sizes="32x32">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -77,14 +81,11 @@
                     <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Reeducação alimentar de forma simples e saudável</h1>
                     <p class="text-white text-base md:text-lg mb-8">Transforme sua saúde com uma nutrição simples, eficiente e baseada em ciência. Vou te mostrar que é possível alcançar resultados reais e duradouros com orientação personalizada e uma dieta sem restrições.</p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="https://wa.me/5579999949012" target="_blank" class="btn-whatsapp text-white font-medium py-3 px-6 rounded-full shadow-lg flex items-center justify-center" data-analytics-name="clique_botao" data-analytics-param-nome_botao="Agendar Consulta - Hero">
-                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                            </svg>
-                            Agendar Consulta
-                        </a>
                         <a href="#sobre" class="btn-about font-medium py-3 px-6 rounded-full shadow-lg flex items-center justify-center" data-analytics-name="clique_botao" data-analytics-param-nome_botao="Sobre Mim - Hero">
                             Sobre Mim
+                        </a>
+                        <a href="#consultas" class="btn-whatsapp text-white font-medium py-3 px-6 rounded-full shadow-lg flex items-center justify-center" data-analytics-name="clique_botao" data-analytics-param-nome_botao="Ver Consultas - Hero">
+                            Ver Consultas
                         </a>
                     </div>
                 </div>
@@ -138,7 +139,7 @@
                                         <circle cx="12" cy="8" r="2" stroke="currentColor" stroke-width="1" fill="none"/>
                                     </svg>
                                 </div>
-                                <span class="text-lg font-bold accent-color mr-1 selo-numero" data-numero="+2">+2</span>
+                                <span class="text-lg font-bold accent-color mr-1 selo-numero" data-numero="3">0</span>
                                 <span class="text-xs text-gray-700">anos de experiência</span>
                             </div> 
                             <!-- Selo Pacientes -->
@@ -148,7 +149,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20v-2a4 4 0 00-3-3.87M7 20v-2a4 4 0 013-3.87M12 12a4 4 0 100-8 4 4 0 000 8z"/>
                                     </svg>
                                 </div>
-                                <span class="text-lg font-bold accent-color mr-1 selo-numero" data-numero="+280">+280</span>
+                                <span class="text-lg font-bold accent-color mr-1 selo-numero" data-numero="600">0</span>
                                 <span class="text-xs text-gray-700">pacientes atendidos</span>
                             </div>
                             <!-- Selo Consultas -->
@@ -159,7 +160,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/>
                                     </svg>
                                 </div>
-                                <span class="text-lg font-bold accent-color mr-1 selo-numero" data-numero="+350">+350</span>
+                                <span class="text-lg font-bold accent-color mr-1 selo-numero" data-numero="1000">0</span>
                                 <span class="text-xs text-gray-700">consultas realizadas</span>
                             </div> 
                              
@@ -393,7 +394,7 @@
                                 </li>
                             </ul>
                             <div class="text-center">
-                                <a href="https://wa.me/5579999949012?text=Olá,%20gostaria%20de%20agendar%20uma%20Consulta%20Tradicional" target="_blank" class="inline-block accent-bg hover:bg-opacity-90 text-white font-medium py-2 px-6 rounded-full transition-all duration-300" data-analytics-name="clique_botao" data-analytics-param-nome_botao="Começar minha jornada - Consulta Nutricional Completa">
+                                <a href="https://wa.me/5579999949012?text=Olá,%20gostaria%20de%20agendar%20uma%20Consulta%20Tradicional" target="_blank" rel="noopener noreferrer" class="inline-block accent-bg hover:bg-opacity-90 text-white font-medium py-2 px-6 rounded-full transition-all duration-300" data-analytics-name="clique_botao" data-analytics-param-nome_botao="Começar minha jornada - Consulta Nutricional Completa">
                                     Começar minha jornada!
                                 </a>
                             </div>
@@ -460,7 +461,7 @@
                                 </li>
                             </ul>
                             <div class="text-center">
-                                <a href="https://wa.me/5579999949012?text=Olá,%20gostaria%20de%20informações%20sobre%20o%20Acompanhamento%20Premium" target="_blank" class="inline-block accent-bg hover:bg-opacity-90 text-white font-medium py-2 px-6 rounded-full transition-all duration-300" data-analytics-name="clique_botao" data-analytics-param-nome_botao="Quero essa experiência exclusiva - Acompanhamento Nutricional VIP">
+                                <a href="https://wa.me/5579999949012?text=Olá,%20gostaria%20de%20informações%20sobre%20o%20Acompanhamento%20Premium" target="_blank" rel="noopener noreferrer" class="inline-block accent-bg hover:bg-opacity-90 text-white font-medium py-2 px-6 rounded-full transition-all duration-300" data-analytics-name="clique_botao" data-analytics-param-nome_botao="Quero essa experiência exclusiva - Acompanhamento Nutricional VIP">
                                     Quero essa experiência exclusiva!
                                 </a>
                             </div>
@@ -504,7 +505,7 @@
                                 Trabalho constantemente para ampliar a rede de convênios atendidos. Se o seu plano não estiver listado, entre em contato para verificarmos a possibilidade de atendimento ou outras opções disponíveis.
                             </p>
                             <div class="mt-2">
-                                <a href="https://wa.me/5579999949012?text=Olá,%20gostaria%20de%20verificar%20se%20meu%20convênio%20é%20aceito" target="_blank" class="inline-flex items-center accent-color hover:underline" data-analytics-name="clique_botao" data-analytics-param-nome_botao="Consultar meu convênio">
+                                <a href="https://wa.me/5579999949012?text=Olá,%20gostaria%20de%20verificar%20se%20meu%20convênio%20é%20aceito" target="_blank" rel="noopener noreferrer" class="inline-flex items-center accent-color hover:underline" data-analytics-name="clique_botao" data-analytics-param-nome_botao="Consultar meu convênio">
                                     <span>Consultar meu convênio</span>
                                     <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -513,7 +514,18 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="mt-10 text-center">
+                        <a href="https://wa.me/5579999949012?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20por%20convênio." target="_blank" rel="noopener noreferrer" class="btn-whatsapp text-white font-semibold py-4 px-8 rounded-full shadow-lg inline-flex items-center justify-center text-lg" data-analytics-name="clique_botao" data-analytics-param-nome_botao="Agendar consulta por convênio">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            Agendar consulta por convênio
+                        </a>
+                    </div>
                 </div>
+            </div>
+        </section>
             </div>
         </section>
 
@@ -609,7 +621,6 @@
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Consultas por convênio</span>
                                 <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Disponibilidade: Manhã e Tarde</span>
-                                <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Agendamento direto com a clínica</span>
                             </div>
                             <div class="flex space-x-4">
                                 <a href="https://maps.app.goo.gl/a2qFY1tevu3mvo9k9" target="_blank" class="text-sm accent-color hover:underline flex items-center">
@@ -617,11 +628,6 @@
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
                                 </svg>
-                                <a href="https://wa.link/joo63a" target="_blank" class="text-sm accent-color hover:underline flex items-center" data-analytics-name="clique_link" data-analytics-param-nome_link="Agendar - Clínica Talita Costá">
-                                    <span>Agendar</span>
-                                    <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -648,7 +654,6 @@
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Consultas por convênio</span>
                                 <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Disponibilidade: Manhã</span>
-                                <span class="bg-[#f5e8e7] accent-color px-2 py-1 rounded-md text-xs">Agendamento direto com a clínica</span>
                             </div>
                             <div class="flex space-x-4">
                                 <a href="https://maps.app.goo.gl/mxrTvCFdruNFMrUj7" target="_blank" class="text-sm accent-color hover:underline flex items-center">
@@ -656,11 +661,6 @@
                                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
                                 </svg>
-                                <a href="https://wa.link/d3aifi" target="_blank" class="text-sm accent-color hover:underline flex items-center" data-analytics-name="clique_link" data-analytics-param-nome_link="Agendar - Clínica Instituto da Dor">
-                                    <span>Agendar</span>
-                                    <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -670,29 +670,19 @@
             </div>
         </section>
 
-        <!-- Recomendações Section - Now a separate page -->
-        <section class="bg-white py-16 px-6">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-bold accent-color mb-8">Cupons e Recomendações</h2>
-                <p class="text-gray-700 max-w-3xl mx-auto mb-8">Confira nossos cupons exclusivos e produtos cuidadosamente selecionados para sua jornada de saúde e bem-estar.</p>
-                <a href="recomendacoes.html" class="inline-block px-8 py-3 bg-[#aa6e69] text-white font-semibold rounded-lg hover:bg-[#8e5b57] transition-colors" onclick="gtag('event', 'clique_botao', {'nome_botao': 'Ver Cupons e Recomendações'});">Ver Cupons e Recomendações</a>
-            </div>
-        </section>
-
         <!-- Contact Section -->
         <section id="contato" class="bg-white py-16 px-6">
             <div class="container mx-auto text-center">
-                <h2 class="text-2xl md:text-3xl font-bold accent-color mb-8">Pronto para transformar sua alimentação?</h2>
+                <h2 class="text-2xl md:text-4xl font-bold accent-color mb-6">Vamos começar sua transformação com mais saúde?</h2>
                 <p class="text-gray-700 mb-8 max-w-2xl mx-auto">
-                    Agende sua consulta hoje e comece sua jornada em busca dos seus objetivos.
+                    Fale comigo pelo WhatsApp e tire suas dúvidas sobre consultas, convênio, objetivos e o plano mais adequado para você.
                 </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
-                    <!-- Botão de WhatsApp -->
-                    <a href="https://wa.me/5579999949012" target="_blank" class="btn-whatsapp text-white font-medium py-3 px-6 rounded-full shadow-lg flex items-center justify-center" onclick="gtag('event', 'clique_botao', {'nome_botao': 'Dúvidas e Agendamentos'});">
+                <div class="flex justify-center">
+                    <a href="https://wa.me/5579999949012?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta%20e%20quero%20saber%20mais%20sobre%20o%20atendimento." target="_blank" rel="noopener noreferrer" class="btn-whatsapp text-white font-semibold py-4 px-8 rounded-full shadow-lg flex items-center justify-center text-lg w-full sm:w-auto" onclick="gtag('event', 'clique_botao', {'nome_botao': 'Dúvidas e Agendamentos'});">
                         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                         </svg>
-                        Dúvidas e Agendamentos
+                        Falar no WhatsApp
                     </a>
                 </div>
             </div>
@@ -727,7 +717,7 @@
                     <div class="flex-1 text-center md:text-right">
                         <div class="flex justify-center md:justify-end space-x-4 mb-4">
                             <!-- Instagram -->
-                            <a href="https://www.instagram.com/brennamirellenutri/" target="_blank" class="text-white hover:text-[#f5e8e7] transition-colors">
+                            <a href="https://www.instagram.com/brennamirellenutri/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-[#f5e8e7] transition-colors">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                                 </svg>

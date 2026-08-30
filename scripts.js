@@ -141,52 +141,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-// Cloudflare protection script movido do index.html
-(function(){
-    function c(){
-        var b=a.contentDocument||a.contentWindow.document;
-        if(b){
-            var d=b.createElement('script');
-            d.innerHTML="window.__CF$cv$params={r:'934f951c079d6f8b',t:'MTc0NTQzNDYwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-            b.getElementsByTagName('head')[0].appendChild(d)
-        }
-    }
-    if(document.body){
-        var a=document.createElement('iframe');
-        a.height=1;
-        a.width=1;
-        a.style.position='absolute';
-        a.style.top=0;
-        a.style.left=0;
-        a.style.border='none';
-        a.style.visibility='hidden';
-        document.body.appendChild(a);
-        if('loading'!==document.readyState)c();
-        else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);
-        else{
-            var e=document.onreadystatechange||function(){};
-            document.onreadystatechange=function(b){
-                e(b);
-                'loading'!==document.readyState&&(document.onreadystatechange=e,c())
-            }
-        }
-    }
-})();
-
 function animateNumbers() {
   document.querySelectorAll('.selo-numero').forEach(function(el) {
-    const target = +el.getAttribute('data-numero');
+    const target = Number(el.getAttribute('data-numero')) || 0;
     let count = 0;
-    const increment = Math.ceil(target / 40);
+    const increment = Math.max(1, Math.ceil(target / 40));
+
     function update() {
       count += increment;
       if (count >= target) {
         el.textContent = '+' + target;
-      } else {
-        el.textContent = '+' + count;
-        requestAnimationFrame(update);
+        return;
       }
+      el.textContent = '+' + count;
+      requestAnimationFrame(update);
     }
+
+    el.textContent = '+0';
     update();
   });
 }
@@ -374,7 +345,8 @@ function initRecomendacoes() {
                 'Iogurte': 'iogurtes',
                 'Omega': 'omega3',
                 'Whey': 'whey',
-                'Creatina': 'creatina'
+                'Creatina': 'creatina',
+                'Magnésio': 'magnesio'
             };
 
             // Render product cards with normalized category and subcategory
@@ -540,7 +512,8 @@ function initRecomendacoes() {
                 'iogurtes': 'Iogurtes Recomendados',
                 'omega3': 'Suplementos Ômega 3',
                 'whey': 'Whey Protein',
-                'creatina': 'Creatina'
+                'creatina': 'Creatina',
+                'magnesio': 'Magnésio'
             };
             if (productsTitle) productsTitle.textContent = titles[filter] || 'Produtos';
         }
