@@ -345,7 +345,8 @@ function initRecomendacoes() {
                 'Iogurte': 'iogurtes',
                 'Omega': 'omega3',
                 'Whey': 'whey',
-                'Creatina': 'creatina'
+                'Creatina': 'creatina',
+                'Magnésio': 'magnesio'
             };
 
             // Render product cards with normalized category and subcategory
@@ -511,7 +512,8 @@ function initRecomendacoes() {
                 'iogurtes': 'Iogurtes Recomendados',
                 'omega3': 'Suplementos Ômega 3',
                 'whey': 'Whey Protein',
-                'creatina': 'Creatina'
+                'creatina': 'Creatina',
+                'magnesio': 'Magnésio'
             };
             if (productsTitle) productsTitle.textContent = titles[filter] || 'Produtos';
         }

@@ -616,6 +616,72 @@
         "badges":  [
 
                    ]
+    },
+    {
+        "id":  58,
+        "title":  "Bio Trimag Puravida",
+        "category":  "Magnésio",
+        "subcategory":  "Complexo",
+        "image":  "assets/images/recomendacoes/magnesio-58.png",
+        "image_filename":  "magnesio-58.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  59,
+        "title":  "Magnésio Plus Ocean Drop",
+        "category":  "Magnésio",
+        "subcategory":  "Complexo",
+        "image":  "assets/images/recomendacoes/magnesio-59.png",
+        "image_filename":  "magnesio-59.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  60,
+        "title":  "Magnésio Complex Essential",
+        "category":  "Magnésio",
+        "subcategory":  "Complexo",
+        "image":  "assets/images/recomendacoes/magnesio-60.png",
+        "image_filename":  "magnesio-60.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  61,
+        "title":  "Magnésio 5 Complex Nutrify",
+        "category":  "Magnésio",
+        "subcategory":  "Complexo",
+        "image":  "assets/images/recomendacoes/magnesio-61.png",
+        "image_filename":  "magnesio-61.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  62,
+        "title":  "Mag 3 Complex Dux Nutrition",
+        "category":  "Magnésio",
+        "subcategory":  "Complexo",
+        "image":  "assets/images/recomendacoes/magnesio-62.png",
+        "image_filename":  "magnesio-62.png",
+        "badges":  [
+
+                   ]
+    },
+    {
+        "id":  63,
+        "title":  "Magnésio Complex 10 Ocean Drop",
+        "category":  "Magnésio",
+        "subcategory":  "Complexo",
+        "image":  "assets/images/recomendacoes/magnesio-63.png",
+        "image_filename":  "magnesio-63.png",
+        "badges":  [
+
+                   ]
     }
 ]
 
