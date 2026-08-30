@@ -303,7 +303,7 @@ function initRecomendacoes() {
                     </div>
                     <div class="flex gap-2">
                         <button class="reco-copy-btn flex-1 px-3 py-2 rounded bg-[#aa6e69] text-white text-sm font-medium hover:bg-[#8e5b57] transition-colors">Copiar</button>
-                        <a href="${coupon.url}" target="_blank" class="flex-1 px-3 py-2 rounded bg-[#f5e8e7] text-[#aa6e69] text-sm font-medium hover:bg-[#f0e0db] transition-colors text-center">Visitar</a>
+                        <a href="${coupon.url}" target="_blank" rel="noopener noreferrer" class="flex-1 px-3 py-2 rounded bg-[#f5e8e7] text-[#aa6e69] text-sm font-medium hover:bg-[#f0e0db] transition-colors text-center">Visitar</a>
                     </div>
                 `;
 
